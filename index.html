@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Course Form</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<h1>Fill Out This Course Form</h1>
+	<form id="courseForm" onsubmit="return validateForm()">
+		<label for="name">Name:</label>
+		<input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+		<label for="email">Email:</label>
+		<input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+		<label for="course">Select Course:</label>
+		<select id="course" name="course" required>
+			<option value="">Select a course</option>
+			<option value="HTML">HTML</option>
+			<option value="CSS">CSS</option>
+			<option value="JavaScript">JavaScript</option>
+			<option value="Python">Python</option>
+		</select>
+
+		<label for="comment">Comments:</label>
+		<textarea id="comment" name="comment" placeholder="Enter your comments"></textarea>
+
+		<input type="submit" value="Submit">
+	</form>
+
+	<script src="script.js"></script>
+</body>
+</html>
